@@ -64,7 +64,7 @@ FROM walmart
 GROUP BY Month
 ORDER BY Month;
 
--- 5.5 Top 5 Performing Stores
+-- 5.5 Top 5  Stores
 SELECT Store, SUM(Weekly_Sales) AS Sales
 FROM walmart
 GROUP BY Store
@@ -83,15 +83,14 @@ LIMIT 5;
 -- ==============================
 
 -- 6.1 Temperature Impact on Sales
-SELECT ROUND(Temperature) AS Temp, AVG(Weekly_Sales) AS Avg_Sales
+SELECT ROUND(Temperature), AVG(Weekly_Sales)
 FROM walmart
-GROUP BY Temp
-ORDER BY Avg_Sales DESC;
+GROUP BY ROUND(Temperature);
 
--- 6.4 Unemployment Impact on Sales
-SELECT ROUND(Unemployment) AS Unemp, AVG(Weekly_Sales) AS Avg_Sales
+-- 6.2 Unemployment Impact on Sales
+SELECT ROUND(Unemployment), AVG(Weekly_Sales)
 FROM walmart
-GROUP BY Unemp;
+GROUP BY ROUND(Unemployment);
 -- ==============================
 -- END OF PROJECT
 -- ==============================
