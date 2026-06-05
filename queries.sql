@@ -64,19 +64,14 @@ FROM walmart
 GROUP BY Month
 ORDER BY Month;
 
--- 5.5 Yearly Sales
-SELECT YEAR(Date) AS Year, SUM(Weekly_Sales) AS Sales
-FROM walmart
-GROUP BY Year;
-
--- 5.6 Top 5 Performing Stores
+-- 5.5 Top 5 Performing Stores
 SELECT Store, SUM(Weekly_Sales) AS Sales
 FROM walmart
 GROUP BY Store
 ORDER BY Sales DESC
 LIMIT 5;
 
--- 5.7 Lowest Performing Stores
+-- 5.6 Lowest Performing Stores
 SELECT Store, SUM(Weekly_Sales) AS Sales
 FROM walmart
 GROUP BY Store
