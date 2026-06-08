@@ -112,5 +112,3 @@ GROUP BY ROUND(Unemployment);
 ---
 ## 💡 Conclusion
 This project demonstrates how SQL can be used to analyze real-world business data and generate actionable insights. It highlights skills in data cleaning, querying, and interpreting results for decision-making.
-Khushikumar Shahukara
-Aspiring Business Analyst | Marketing Analyst
